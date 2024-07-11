@@ -1,0 +1,92 @@
+
+body{
+    background-image: url("r1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: rgba(147, 151, 54, 0.895); */
+}
+.container{
+    width: 300px;
+    padding: 15px 25px;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    transform: translate(-50% -50%);
+    /* background:#4fc3f146; */
+    background-image: url(r2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.container p{
+    font-weight: 300px;
+    font-size: 15px;
+    margin-bottom: 8px;
+    margin-left: 5px;
+    color: whitesmoke;
+}
+.container input{
+    width: 90%;
+    height: 20px;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    background-color: rgba(71, 70, 86, 0.702);
+    color: white;
+}
+.container button{
+    width: 80% ;
+    height: 40px;
+    background: #494eea;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0,0.1);
+    cursor: pointer;
+    margin: 20px;
+    font-weight: 400;  
+}
+
+#imgbox{
+    width: 140px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+#imgbox img{
+    width: 85%;
+    padding: 10px;
+}
+#imgbox.show-image{
+        max-height: 300px;
+        margin: 10px auto;
+        border: 2px solid #d1d1d1;
+}
+
+.error{
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform:translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
